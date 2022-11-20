@@ -1,0 +1,186 @@
+
+
+body {
+    background-color: #E6CBFE;
+}
+
+#tip-input {
+    width: 49em;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#results {
+    background-color: #864CBA;
+    height: 17em;
+    margin-top: 5px;
+    padding: 20px 5px;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+h1 {
+    color: #864CBA;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+
+
+#custom {
+    width: 18%;
+}
+
+.tip { 
+    display: inline-block;
+    padding: 10px;
+    background-color: #ce97ffd3;
+    color:black;
+    border: 2px solid white; 
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+
+.tip:hover {
+    background-color: #864CBA;
+    border: 2px solid white; 
+    color: white;
+    cursor: pointer;
+    
+}
+
+#bill-label {
+    margin-top: 10px;
+}
+
+input[type="reset"]:hover {
+    cursor: pointer;
+}
+label, input[type="number"]{
+    margin-bottom: 1rem;
+}
+#people-err, #bill-err {
+    font-size: 13px;
+    visibility: hidden;
+    text-align: center;
+    display: inline;
+    font-weight: bold;
+    color: #e83939;
+    border: 2px solid #864CBA;
+    padding: 2px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.symbol {
+    margin-left: 15px;
+}
+.tip-outputs > h4 {
+    margin-top: 0px;
+
+
+}
+#buttons {
+    margin-left: 0;
+    grid-gap: 8px;
+}
+.tip-outputs > h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.tip-outputs {
+    margin-left: 5px;
+}
+label {
+    font-size: 20px;
+    display: block;
+}
+
+::placeholder {
+    color: #864CBA;
+}
+#buttons .tip:hover,
+#buttons .tip:focus {
+    background-color: #864CBA;
+    border: 2px solid white; 
+    color: white;
+    cursor: pointer;
+}
+div {
+    margin-left: 10px;
+}
+h3, p, h4 {
+    display: inline-block;
+}
+p {
+    margin-left: 1rem;
+    font-size: larger;
+}
+
+#custom {
+    background-color: #E6CBFE;
+    cursor: pointer;
+    text-align: right;
+    color: #864CBA;
+    font-weight: bold;
+}
+
+#reset {
+    margin: 0 25%;
+    padding: 2px 52px;
+    background-color: #E6CBFE;
+    border: solid 5px white;
+    border-radius: 2px;
+    color: #864CBA;
+}
+  
+#wrapper:not(:last-child) {
+    margin-bottom: 18px;
+}
+@media (min-width: 320px) and (orientation: portrait) {
+        h1 {
+            display: block;
+            color: #864CBA;
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            height: auto;
+        }
+    #tip-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 78%;
+        height: min-content;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px; 
+    }
+    * {
+       margin-bottom: 5px; 
+       margin-left: 0 auto;
+    }
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: 1fr 1fr;
+        margin-left: 0;
+        grid-gap: 8px;
+    }
+    #custom {
+        width: 80%;
+        height: 50%
+    }
+    
+
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <main>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="tip.css" rel="stylesheet">
+    </main>
+    <body>
+        <h1>Tipper<br>Splitter</h1>
+        <form id="tip-body" action="POST">
+            <div id="tip-input">
+                <!-- The user inputting bill amt, tip and people-->
+                <div id="tip-info">
+                    <label for="bill" id="bill-label">Bill <span id="bill-err">Number cannot be less than 1!</span></label>
+                    <input type="number" id="bill" required name="bill">
+                    <label id="tip-label">Select Tip %</label>
+                    <div id="buttons">
+                        <button type="button" class="tip" value="5" id="but5">5%</button>
+                        <button type="button" class="tip" value="10" id="but10">10%</button>
+                        <button type="button" class="tip" value="15" id="but15">15%</button>
+                        <button type="button" class="tip" value="25" id="but20">25%</button>
+                        <button type="button" class="tip" value="50" id="but50">50%</button>
+                        <input type="number" placeholder="Custom" id="custom" class="tip" min="0" max="100">
+                    </div>
+                    <label for="people" id="people-label">Number of People <span class="err" id="people-err">Number cannot be less than 1!</span></label>
+                    <input type="number" id="people" min="1" step="1">
+                </div>
+                <div id="results">
+                    <!-- output of the users input-->
+                    <div id="tip-calculation">
+                        <div class="tip-outputs">
+                            <h3 id="user-output-tip">Tip Amount <span class="symbol">&#8776</span></h3> 
+                            <p id="tip-amount"></p>   
+                        <div class="tip-outputs">
+                            <h4 id="tip-per">/ per person <span class="symbol">&#8776</span></h4>
+                            <p id="tip-amount-per"></p>
+                        </div>
+                        <div class="tip-outputs">
+                            <h3 id="total-label">Total Amount <span class="symbol">&#8776</span></h3>
+                            <p id="total"></p>
+                        </div>
+                        <div class="tip-outputs">
+                            <h4 id="total-per">/ per person <span class="symbol">&#8776</span></h4>
+                            <p id="totalAmPer"></p>
+                        </div>
+                    </div> 
+                    <!-- reset button -->
+                    <div id="reset-info">
+                        <input type="reset" id="reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="tip.js"></script>
+    </body>
+
+</html>
