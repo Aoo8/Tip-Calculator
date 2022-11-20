@@ -77,10 +77,10 @@ numOfPeople.addEventListener('input', function() {
 
 
 function resetAllValues() {
-    tipAM.textContent = '';
-    tipAMPer.textContent = '';
-    totalAM.textContent = '';
-    totalAMPer.textContent = '';
+    tipAM.textContent = `$0.00`
+    totalAM.textContent = `$0.00`
+    tipAMPer.textContent = `$0.00`;
+    totalAMPer.textContent = `$0.00`;
 }
 
 reset.addEventListener('click', function() {
