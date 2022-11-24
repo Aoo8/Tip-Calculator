@@ -108,8 +108,7 @@ label {
 ::placeholder {
     color: #864CBA;
 }
-#buttons .tip:hover,
-#buttons .tip:focus {
+#buttons .tip:hover, #buttons .tip:focus {
     background-color: #864CBA;
     border: 2px solid white; 
     color: white;
@@ -178,7 +177,7 @@ p {
     }
     #custom {
         width: 80%;
-        height: 50%
+        height: 50%;
     }
     
 
